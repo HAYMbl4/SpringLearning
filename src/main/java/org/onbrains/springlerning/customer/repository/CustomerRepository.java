@@ -1,8 +1,8 @@
 package org.onbrains.springlerning.customer.repository;
 
-import org.onbrains.springlerning.customer.model.Customer;
-
 import java.util.List;
+
+import org.onbrains.springlerning.customer.model.Customer;
 
 public interface CustomerRepository {
 
@@ -12,6 +12,6 @@ public interface CustomerRepository {
 
 	List<Customer> findAll();
 
-	boolean remove(Long id);
+	void delete(Long id);
 
 }
